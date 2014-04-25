@@ -4,6 +4,6 @@
 <hr>
 <h3>
   <% @animals.each do |animal| %>
-    <%= animal.name %> | <%= animal.diet %>
+    <a href="/animals/<%= animal.id %>"><%= animal.name %></a> | <%= animal.diet %><br>
   <% end %>
 </h3>

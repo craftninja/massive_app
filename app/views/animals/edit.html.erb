@@ -1,0 +1,10 @@
+<h1>Animals are awesome!</h1>
+<hr>
+<h3>
+  <form action="/animals/<%= @animal.id %>" method="post">
+    <input type="hidden" name="_method" value="put">
+    <input type="text" id="Name" value="<%= @animal.name %>" name="name">
+    <input type="text" id="Diet" value="<%= @animal.diet %>" name="diet">
+    <input type="submit" value="Update">
+  </form>
+</h3>
