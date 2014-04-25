@@ -1,6 +1,6 @@
 # README
 
-## Massive App is a Rails practice project containing CRUD databases
+## Massive App is a Rails practice project containing CRUD database management
 
 To get this party started:
 
