@@ -36,4 +36,18 @@ feature 'User can manage so many things (animals)' do
     expect(page).to have_content(new_diet)
   end
 
+  scenario 'User can delete animals' do
+    visit '/animals'
+    click_on 'Add animal'
+    name = 'beaver'
+    diet = 'vegetation'
+    fill_in 'Name', with: name
+    fill_in 'Diet', with: diet
+    click_on 'Add'
+    click_on name
+    click_on 'Delete'
+    expect(page).to have_no_content(name)
+    expect(page).to have_no_content(diet)
+  end
+
 end

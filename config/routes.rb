@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/animals/:id' => 'animals#show'
   get '/animals/:id/edit' => 'animals#edit'
   put '/animals/:id' => 'animals#update'
+  delete '/animals/:id' => 'animals#destroy'
 end

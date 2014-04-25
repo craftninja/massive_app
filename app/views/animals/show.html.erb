@@ -1,3 +1,8 @@
 <h1>Animals are awesome!</h1>
 <hr>
-<h3><%= @animal.name %> | <%= @animal.diet %> | <a href="/animals/<%= @animal.id %>/edit">Edit</a> | </h3>
+<h3><%= @animal.name %> | <%= @animal.diet %> | <a href="/animals/<%= @animal.id %>/edit">Edit</a> |
+<form action="/animals/<%= @animal.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>
+</h3>
