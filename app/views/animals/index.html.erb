@@ -1,0 +1,9 @@
+<h1>Animals are awesome!</h1>
+<hr>
+<a href="/animals/new">Add animal</a>
+<hr>
+<h3>
+  <% @animals.each do |animal| %>
+    <%= animal.name %> | <%= animal.diet %>
+  <% end %>
+</h3>
